@@ -1,0 +1,126 @@
+:root {
+  --brand-color: #f5c449;
+}
+
+body {
+  background-color: #181818;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar-toggler {
+  padding: .25rem .25rem;
+}
+
+.navbar-dark {
+  background-color: #252525 !important;
+  border-bottom: 1px solid #000000;
+}
+
+.navbar-link {
+  color: #afafaf;
+}
+
+.navbar-link:hover {
+  color: var(--brand-color);
+}
+
+nav .nav-link:hover {
+  color: var(--brand-color) !important;
+}
+
+nav li a::after {
+  content: "|";
+  font-size: 0.8rem;
+  margin-left: 0.55rem;
+  display: inline;
+  vertical-align: middle;
+  color: #474947;
+}
+
+nav .nav-link-last::after {
+  display: none;
+}
+
+nav #nav-search {
+  display:flex;
+}
+
+nav #nav-search * > * {
+  border: 1px solid var(--brand-color);
+}
+
+nav #nav-search * > .btn {
+  background-color: var(--brand-color);
+}
+
+nav #nav-search * > input {
+  background: #303130;
+  color: grey;
+}
+
+nav #nav-search * > *:focus {
+  box-shadow: none;
+}
+
+.catagory-title {
+  margin-top: 0.75rem;
+  font-size: 1.2rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid var(--brand-color);
+}
+
+.catagory-title > a {
+  color: grey;
+}
+
+.card-section {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.card-section > * {
+  --bs-gutter-x: 0.5rem;
+}
+
+.card {
+  border: 0;
+  background-color: transparent;
+  text-align: center;
+}
+
+.card > .card-body {
+  padding: 0.2rem;
+}
+
+.card .card-title {
+  font-size: 0.75rem;
+  color: #afafaf;
+}
+
+.card > img {
+  border-radius: 0.3rem;
+}
+
+@media (max-width: 1199.98px) {
+  nav li a::after {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .row-col-lg-8 > * {
+    flex: 0 0 auto;
+    width: 12.5%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .row-cols-xl-10 > * {
+    flex: 0 0 auto;
+    width: 10%;
+  }
+}
