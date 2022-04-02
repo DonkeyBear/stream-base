@@ -106,7 +106,7 @@ nav #nav-search * > *:focus {
 
 .twitch-embeds {
   display: flex;
-  height: calc(calc(100vw / 16 * 9) - 0.75rem);
+  height: calc(calc(100vw / 16 * 9) - 1.5rem);
 }
 
 .twitch-player {
